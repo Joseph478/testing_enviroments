@@ -51,58 +51,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
-            {/* Variables Privadas */}
-            <div className="bg-red-50 dark:bg-red-900/20 border-2 border-red-200 dark:border-red-800 rounded-xl p-6">
-              <h2 className="text-2xl font-semibold text-red-800 dark:text-red-300 mb-4 flex items-center gap-2">
-                <span className="text-2xl">🔒</span>
-                Variables Privadas (Servidor)
-              </h2>
-              <div className="space-y-3 text-sm md:text-base">
-                <p className="text-red-700 dark:text-red-300 italic">
-                  Las variables privadas (sin prefijo NEXT_PUBLIC_) solo están disponibles en el servidor.
-                  No se exponen al cliente por seguridad.
-                </p>
-                <div className="bg-red-100 dark:bg-red-950 p-4 rounded-lg">
-                  <p className="font-semibold text-red-900 dark:text-red-200 mb-2">
-                    Ejemplos en .env.local:
-                  </p>
-                  <ul className="list-disc list-inside space-y-1 text-red-800 dark:text-red-300">
-                    <li>DATABASE_URL</li>
-                    <li>API_SECRET_KEY</li>
-                    <li>JWT_SECRET</li>
-                    <li>STRIPE_SECRET_KEY</li>
-                    <li>AWS_ACCESS_KEY_ID</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            {/* Información adicional */}
-            <div className="bg-blue-50 dark:bg-blue-900/20 border-2 border-blue-200 dark:border-blue-800 rounded-xl p-6">
-              <h2 className="text-2xl font-semibold text-blue-800 dark:text-blue-300 mb-4 flex items-center gap-2">
-                <span className="text-2xl">ℹ️</span>
-                Información
-              </h2>
-              <ul className="space-y-2 text-blue-800 dark:text-blue-300">
-                <li className="flex items-start gap-2">
-                  <span className="text-blue-600 dark:text-blue-400 font-bold">•</span>
-                  <span>Las variables con <code className="bg-blue-100 dark:bg-blue-950 px-2 py-0.5 rounded">NEXT_PUBLIC_</code> son accesibles en el navegador</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-blue-600 dark:text-blue-400 font-bold">•</span>
-                  <span>Las variables sin ese prefijo solo están disponibles en el servidor</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-blue-600 dark:text-blue-400 font-bold">•</span>
-                  <span>El archivo <code className="bg-blue-100 dark:bg-blue-950 px-2 py-0.5 rounded">.env.local</code> está en .gitignore (no se sube a GitHub)</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-blue-600 dark:text-blue-400 font-bold">•</span>
-                  <span>Usa <code className="bg-blue-100 dark:bg-blue-950 px-2 py-0.5 rounded">.env.example</code> como plantilla para documentar las variables necesarias</span>
-                </li>
-              </ul>
-            </div>
           </div>
 
           {/* Footer */}
